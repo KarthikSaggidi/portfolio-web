@@ -1,0 +1,296 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    height: 100vh; /* Prevents scrolling */
+    overflow: hidden; /* Disables scrolling */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+/* Sections */
+.section {
+    width: 100%;
+    height: 100vh; /* Ensures each section fits within viewport */
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Active section is visible */
+.section.active {
+    display: flex;
+}
+
+/* Home Page - Modernized */
+#home {
+    background: url('file:///Users/karthiksaggidi/Downloads/workplace-with-smartphone-laptop-black-table-top-view-copyspace-background.jpg');
+    background-size: cover;  /* Ensures the image fills the screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Home Intro */
+.intro {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Subheading */
+.intro p {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* Resume Button */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff9800;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+#projects {
+    background:url("https://images.template.net/222803/dark-background-edit-online.jpg");
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* About */
+/* About */
+#about {
+    background: url('file:///Users/karthiksaggidi/Downloads/peter-gargiulo-cGNCepznaV8-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: justify;
+    border-left: 50px;
+    padding: 20px; /* Uniform padding on all sides */
+    max-width: 97.5%; /* Limits width to prevent overflow */
+    margin: auto; /* Centers the section */
+}
+#about h2{
+    color: #555;
+}
+
+/* Contact */
+#contact {
+    background: #ffffff;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-attachment: fixed; /* Keeps the background static */
+    width: 100%;
+    height: 100vh; /* Ensures it fills the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contact h2 {
+    color: black; /* Changes the heading color to black */
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%; /* Adjust width for better alignment */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: left; /* Ensures text starts from left */
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #219150;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    background-color: #87c0c2;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    top: 80%; /* Moves the popup lower on the screen */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup button {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup button:hover {
+    background: #e67e22;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.social-icons a img {
+    width: 40px;  /* Adjust size */
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.social-icons a img:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - Karthik Saggidi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="section active">
+        <div class="intro">
+            <h4>Welcome to my portfolio</h4>
+            <h1>Hi, I'm Karthik Saggidi!</h1>
+            <p>Aspiring Web Developer | Tech Enthusiast | UI/UX Designer</p>
+            <div style="text-align: center; display: flex; justify-content: center; gap: 15px; align-items: center; margin-bottom: 10px;">
+    <!-- GitHub Icon -->
+    <a href="https://github.com/dashboard" target="_blank">
+        <img src="file:///Users/karthiksaggidi/Downloads/Download_GitHub_Logo__Git_Hub_Icon_On_White_Background-removebg-preview.png" width="50" height="50" alt="GitHub">
+    </a>
+    
+    <!-- Email Icon -->
+    <a href="mailto:saggidik@.com" target="_blank">
+        <img src="file:///Users/karthiksaggidi/Downloads/Email_Icon_Clipart_PNG_Images__Email_Icon__Email_Icons__Letter_Clipart__Address_PNG_Image_For_Free_Download-removebg-preview.png" width="50" height="50" alt="Email">
+    </a>
+    
+    <!-- LinkedIn Icon -->
+    <a href="https://www.linkedin.com/in/karthik-saggidi-142aa8349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+        <img src="file:///Users/karthiksaggidi/Downloads/Download_Linkedin_logo_vector__Linkedin_symbol__Linkedin_icon_free_vector-removebg-preview.png" width="60" height="55" alt="LinkedIn">
+    </a>
+    
+    <!-- Instagram Icon -->
+    <a href="https://www.instagram.com/_.karthik._.0155._?igsh=bWM0MDFxM3JrMGRj" target="_blank">
+        <img src="file:///Users/karthiksaggidi/Downloads/Instagram_Logo_PNG_-_Free_Download-removebg-preview.png" width="60" height="60" alt="Instagram">
+    </a>
+</div>
+<br>
+
+<!-- Download Resume Button -->
+<div style="text-align: center;">     
+<a href="file:///Users/karthiksaggidi/Downloads/KarthikSaggidi_Resume.pdf" download class="button">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>My portfolio website is a personal brand representation, showcasing my web development skills and projects. Designed with a clean, modern UI, it includes sections such as About, Projects, and Contact. The website is fully responsive and built using HTML, CSS, and JavaScript, ensuring seamless user experience across devices. With smooth transitions and interactive elements, the portfolio highlights my creativity and attention to detail. It creates a visually engaging platform where employers and collaborators can explore my work, skills, and accomplishments effortlessly. 
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Interactive To-Do App</h3>
+                <p>
+                    The Interactive To-Do App is designed to enhance productivity with a simple yet intuitive user interface. Built using JavaScript, it allows users to add, edit, and delete tasks dynamically. The application features task prioritization, due dates, and local storage to retain user data even after refreshing the page. The sleek UI ensures a smooth experience, making task management efficient and engaging. With dark mode compatibility and drag-and-drop reordering, the to-do app enhances daily workflow while maintaining a stylish and modern appearance, ensuring that users stay on top of their tasks with ease.
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>
+                    The Weather App provides real-time weather forecasts with an interactive and modern interface. By integrating a weather API, users can search for any city to get accurate temperature, humidity, wind speed, and general weather conditions. The app features dynamic backgrounds that change based on weather conditions, giving users a visually immersive experience. Built with JavaScript, HTML, and CSS, the application is designed to be responsive and mobile-friendly. The focus is on simplicity and usability, ensuring that users can access crucial weather information quickly and effortlessly from any device.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello! I’m Karthik Saggidi, a passionate frontend web developer with a strong interest in designing and building interactive, user-friendly websites. My focus is on creating clean, modern, and visually appealing web experiences that enhance usability and engagement. I love working with HTML, CSS, JavaScript, and frontend frameworks to bring creative ideas to life.
+
+            From a young age, I’ve been fascinated by how websites function and how design influences user behavior. Over time, I developed a deep interest in UI/UX design, ensuring that every project I work on is both aesthetically pleasing and highly functional. I enjoy experimenting with different styles, layouts, and animations to enhance the user experience.
+            
+            Although I have experience with backend development, my passion lies in the frontend. I prefer focusing on the visual and interactive aspects of web applications rather than dealing with databases and server-side logic. My goal is to build responsive, intuitive, and accessible websites that provide users with a seamless experience across all devices.
+            
+            I believe in continuous learning and staying up-to-date with the latest web technologies and design trends. Whether it’s improving performance, optimizing layouts, or integrating smooth animations, I always strive to enhance the quality of my work.
+            
+            I am always open to new challenges, collaborations, and opportunities that push my creative and technical skills further. If you’re looking for someone who is passionate about building engaging digital experiences, let’s connect and create something amazing together! </p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form class="contact-form" onsubmit="return showPopup()">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <textarea id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="popup" class="popup">
+            <p>Thank you for your response!</p>
+            <button onclick="hidePopup()">OK</button>
+        </div>
+    </section>
+    <div class="social-icons">
+        <a href="https://github.com/dashboard" target="_blank">
+            <img src="file:///Users/karthiksaggidi/Downloads/github.svg " alt="GitHub">
+        </a>
+        <a href="https://instagram.com/yourusername" target="_blank">
+            <img src="instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">
+            <img src="linkedin-icon.png" alt="LinkedIn">
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
